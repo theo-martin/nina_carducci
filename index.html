@@ -4,13 +4,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      crossorigin
     />
 
     <!-- Schema.org -->
@@ -20,7 +22,7 @@
         "@type": "https://schema.org/LocalBusiness",
         "name": "Nina Carducci",
         "description": "Photographe professionnelle à Bordeaux.",
-        "image": "",
+        "image": "https://theomartin.fr/nina_carducci/assets/images/nina.webp",
         "priceRange": "€€",
         "isAccessibleForFree": false,
         "currenciesAccepted": "EUR",
@@ -34,29 +36,30 @@
         },
         "openingHours": "Mo-Fr 10:00-19:00",
         "telephone": "05 56 67 78 89",
-        "url": ""
+        "url": "https://theomartin.fr/nina_carducci/"
       }
     </script>
     <!-- Ajout : Schema.org -->
+
+    <meta
+      name="description"
+      content="Site Portfolio de la photographe Nina Carducci, Mes services proposées sont : Shooting photo, Retouches, Album photos "
+    />
+    <!-- Ajout de la meta description -->
+    <title>Nina Carducci, Photographe professionnelle à Bordeaux</title>
+    <!-- Ajout du titre-->
+  </head>
+  <body>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       defer
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <meta
-      name="description"
-      content="Site Portfolio de la photographe Nina Carducci, Mes services proposées sont : Shooting photo, Retouches, Album photos "
-    />
-    <!-- Ajout de la meta description -->
-
-    <title>Nina Carducci, Photographe professionnelle à Bordeaux</title>
-    <!-- Ajout du titre-->
-  </head>
-  <body>
-    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
+
     <!-- Ajout defer + deplacement script en dehors de la balise head -->
     <header>
       <!-- Ajout balise header -->
